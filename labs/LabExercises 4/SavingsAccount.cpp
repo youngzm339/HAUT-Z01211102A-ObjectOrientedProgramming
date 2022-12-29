@@ -1,20 +1,19 @@
 // Lab 1: SavingsAccount.cpp
+// Copyright: Brian Yang 2022-12-29
 // Member-function definitions for class SavingsAccount.
 #include "SavingsAccount.h" // SavingsAccount class definition
 
 // constructor initializes balance and interest rate
-SavingsAccount::SavingsAccount( double initialBalance, double rate )
-   : Account( initialBalance ) // initialize base class
+SavingsAccount::SavingsAccount(double initialBalance, double rate)
+    : Account(initialBalance) // initialize base class
 {
-   interestRate = ( rate < 0.0 ) ? 0.0 : rate; // set interestRate
+  interestRate = (rate < 0.0) ? 0.0 : rate; // set interestRate
 } // end SavingsAccount constructor
 
 // return the amount of interest earned
-double SavingsAccount::calculateInterest()
-{
-   return getBalance() * interestRate;
+double SavingsAccount::calculateInterest() {
+  return getBalance() * interestRate;
 } // end function calculateInterest
-
 
 /**************************************************************************
  * (C) Copyright 1992-2012 by Deitel & Associates, Inc. and               *
