@@ -14,6 +14,10 @@ Z01211102A: ObjectOrientedProgramming is a course provided by Prof. Ma Ding at H
 | Assignment_02    | 2      |
 | Assignment_03    | 2      |
 | Assignment_04    | 5      |
+| Assignment_05    | 2      |
+| Assignment_06    | 3      |
+| Assignment_07    | 2      |
+| Assignment_08    | 2      |
 
 ---
 
