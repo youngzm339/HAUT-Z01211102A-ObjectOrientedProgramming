@@ -10,7 +10,15 @@ Package::Package(string Sender, string Receiver, string Address, string City,
   this->City = City;
   this->State = State;
   this->Postcode = Postcode;
-  this->Weight = Weight;
-  this->Price = Price;
+  if (Weight < 0) {
+    this->Weight = 1.0;
+  } else {
+    this->Weight = Weight;
+  }
+  if (Price < 0) {
+    this->Price = 1.0;
+  } else {
+    this->Price = Price;
+  }
 };
 double Package::calculateCost() { return Weight * Price; }
